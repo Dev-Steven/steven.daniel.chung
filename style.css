@@ -1,0 +1,428 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*<---------------------------Start of my code------------------------------->*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+html {
+  font-family: "helvetica neue", sans-serif;
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  /* border-bottom: 1px solid #EAEAEB; */
+  /* text-align: right; */
+  height: 100px;
+  line-height: 70px;
+  background-color: #FF8C00;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* font-size: 20px; */
+}
+
+.nav a {
+  transition: all ease-in-out 250ms;
+}
+
+.nav a:hover {
+  color: #FFB24C;
+}
+
+.steven {
+  text-decoration: none;
+  color: white;
+  float: left;
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+.menu {
+  /* margin: 0 30px 0 0;
+  font-size: 25px; */
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  line-height: 70px;
+  padding: 10px 30px;
+  transition: all ease-in-out 250ms;
+  display: block;
+}
+
+.menu a:hover {
+  color: #FFB24C;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: block;
+  width: 26px;
+  float: right;
+  color: white;
+  cursor: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  display: block;
+  background-color: #FF8C00;
+}
+
+.main {
+  /* position: absolute; */
+  margin-top: 100px;
+  display: block;
+  width: auto;
+  overflow-y: scroll;
+  overflow: hidden;
+  text-align: center;
+  margin: 0px;
+}
+
+section {
+  min-height: 500px;
+  height: auto;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+p {
+  font-size: 15px;
+  margin: 0px 0px;
+  text-align: center;
+}
+
+#steven-section {
+  padding: 60px;
+  background-color: #FFB24C;
+}
+
+#steven-section .picture-box {
+  padding-top: 55px;
+}
+
+#steven-section img {
+  border-radius: 50%;
+  border: 5px solid white;
+  /* padding: 50px; */
+}
+
+#steven-section h1 {
+  padding-top: 35px;
+}
+
+#steven-section h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#steven-section p {
+  padding: 5px;
+  margin: 10px;
+}
+
+#about-section {
+  padding: 60px;
+  background-color: #F8F8FF;
+  color: #FF8C00;
+  height: auto;
+}
+
+#about-section .about-box {
+  padding: 10px;
+  margin: 10px;
+  /* width: 700px; */
+}
+
+#about-section h5 {
+  font-size: 24px;
+}
+
+#about-section p {
+  padding: 5px;
+  width: auto;
+}
+
+#resume-section {
+  padding: 50px;
+  background-color: #FFF0E0;
+  color: #FF8C00;
+}
+
+#resume-section h1 {
+  padding: 50px;
+}
+
+#resume-section a {
+  color: #FF8C00;
+  font-size: 190px;
+  transition: all ease-in-out 250ms;
+}
+
+#resume-section a:hover {
+  color: #FFB24C;
+}
+
+#contact-section {
+  padding: 50px;
+  background-color: #F8F8FF;
+  color: #FF8C00;
+}
+
+#contact-section .contact-box {
+  padding: 20px;
+}
+
+#contact-section h1 {
+  padding: 10px;
+}
+
+#contact-section p {
+  /* font-size: 25px; */
+  padding: 10px;
+}
+
+#contact-section h2 {
+  padding: 50px;
+  font-size: 50px;
+}
+
+#contact-section a {
+  text-decoration: none;
+  color: #FF8C00;
+  transition: all ease-in-out 250ms;
+}
+#contact-section a:hover {
+  color: #FFB24C;
+}
+
+#contact-section li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+#contact-section li a {
+  color: #FF8C00;
+  text-decoration: none;
+  font-size: 45px;
+  transition: all ease-in-out 250ms;
+}
+
+#contact-section li a:hover {
+  color: #FFB24C;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .steven {
+      font-size: 45px;
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+
+    .menu {
+      margin: 0 30px 0 0;
+      font-size: 25px;
+      /* display: block; */
+    }
+
+    label {
+      font-size: 50px;
+      padding-top: 10px;
+    }
+
+    .main {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+  .steven {
+    padding-top: 30px;
+  }
+
+  .nav {
+    text-align: right;
+    float: right;
+    width: 100%;
+    padding-right: 0;
+    line-height: 30px;
+  }
+
+
+  .menu {
+    margin: 0;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-right: 0px;
+    font-size: 25px;
+    display: block;
+
+  }
+
+  .menu a {
+    text-align: right;
+    display: inline-block;
+    line-height: 70px;
+    padding: 10px 30px;
+
+  }
+  label {
+    display: none;
+    margin: 0;
+  }
+  .main {
+    width: auto;
+  }
+}
+
+footer {
+  background-color: #FF8C00;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  overflow: hidden;
+}
