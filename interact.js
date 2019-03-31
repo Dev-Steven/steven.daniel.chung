@@ -12,3 +12,7 @@ function goLI() {
     url = "https://www.linkedin.com/in/steven-chung-4174b9179/";
     window.open(url);
 }
+
+function menuFunction() {
+  document.getElementById('menu').classList.toggle("show");
+}

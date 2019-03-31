@@ -179,7 +179,7 @@ label {
   width: 26px;
   float: right;
   color: white;
-  cursor: none;
+  cursor: pointer;
 }
 
 #toggle {
@@ -363,16 +363,16 @@ p {
     }
 
     .main {
-      width: 768px;
+      width: 100%;
       margin: 0 auto;
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 40px;
     }
 
     p {
-      font-size: 25px;
+      font-size: 16px;
     }
 }
 
@@ -385,9 +385,9 @@ p {
 
   .nav {
     text-align: right;
-    float: right;
+    float: none;
     width: 100%;
-    padding-right: 0;
+    /* padding-right: 0; */
     line-height: 30px;
   }
 
@@ -398,26 +398,38 @@ p {
     padding-top: 10px;
     padding-right: 0px;
     font-size: 25px;
-    display: block;
+    display: inline;
+    float: none;
 
   }
 
   .menu a {
+    clear: none;
     text-align: right;
-    display: inline-block;
+    display: table;
     line-height: 70px;
     padding: 10px 30px;
-
+    float: right;
   }
+
   label {
     display: none;
     margin: 0;
+    /* float: none; */
   }
+
   .main {
     width: auto;
   }
-}
 
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
 footer {
   background-color: #FF8C00;
   color: white;
