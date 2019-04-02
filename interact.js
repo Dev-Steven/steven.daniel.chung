@@ -1,5 +1,5 @@
 function goIG() {
-    url = "https://www.instagram.com/stevendotdaniel/?hl=en";
+    url = "https://www.instagram.com/steven____daniel/?hl=en";
     window.open(url);
 }
 
@@ -13,6 +13,21 @@ function goLI() {
     window.open(url);
 }
 
-function menuFunction() {
-  document.getElementById('menu').classList.toggle("show");
+// function hamburgerFunction(x) {
+//   x.classList.toggle("change");
+// }
+
+function hamburgerFunction(x) {
+  x.classList.toggle("change");
+  document.getElementById("links").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.hamburger')) {
+  var links = document.getElementById("links");
+    if (links.classList.contains('show')) {
+        links.classList.remove('show');
+        links.classList.toggle('change');
+    }
+  }
 }

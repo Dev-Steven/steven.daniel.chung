@@ -120,24 +120,37 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav {
-  /* border-bottom: 1px solid #EAEAEB; */
-  /* text-align: right; */
-  height: 100px;
-  line-height: 70px;
-  background-color: #FF8C00;
+.navbar {
+  overflow: hidden;
+  background-color:  #ff8c00;
   position: fixed;
-  top: 0;
   width: 100%;
-  /* font-size: 20px; */
 }
 
-.nav a {
-  transition: all ease-in-out 250ms;
+.navbar a {
+  /* font-size: 16px; */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.nav a:hover {
+.navbar a:hover, .dropdown:hover .line1, .line2, .line3, .hamburger:focus {
   color: #FFB24C;
+}
+
+.dropdown {
+  text-align: left;
+  overflow: hidden;
+}
+
+.dropdown .hamburger {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
 }
 
 .steven {
@@ -146,17 +159,121 @@ html {
   float: left;
   font-size: 35px;
   padding-left: 10px;
+  padding-top: 20px;
 }
 
-.menu {
-  /* margin: 0 30px 0 0;
-  font-size: 25px; */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.line1, .line2, .line3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: roate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .line2 {
+  opacity: 0;
+ }
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: roate(45deg) translate(-8px, -8px) ;
+}
+
+.menuLinks {
+  display: none;
+  background-color: #ff8c00;
+  width: 100%;
+  z-index: -1;
+}
+
+.menuLinks a {
+  float: left;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menuLinks a:hover {
+  color: #FFB24C;
+}
+
+.show {
+  display: block;
+  text-align: left;
+}
+
+/* .nav {
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  height: 100px;
+  line-height: 70px;
+  background-color: #FF8C00;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+ .nav a {
+  transition: all ease-in-out 250ms;
+}
+
+.nav a:hover {
+  color: #FFB24C;
+}  */
+
+/* .menu {
+   margin: 0 30px 0 0;
+  font-size: 25px;
   text-align: center;
   width: 100%;
   display: none;
 }
 
-.menu a {
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: roate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+ }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: roate(45deg) translate(-8px, -8px) ;
+}
+
+ .menu a {
   clear: right;
   text-decoration: none;
   color: white;
@@ -180,16 +297,7 @@ label {
   float: right;
   color: white;
   cursor: pointer;
-}
-
-#toggle {
-  display: none;
-}
-
-#toggle:checked + .menu {
-  display: block;
-  background-color: #FF8C00;
-}
+} */
 
 .main {
   /* position: absolute; */
@@ -343,6 +451,7 @@ p {
   color: #FFB24C;
 }
 
+/* iPad disply */
 
 @media only screen and (min-width: 768px) {
     .steven {
@@ -351,16 +460,15 @@ p {
       padding-left: 20px;
     }
 
-    .menu {
+    /* .menu {
       margin: 0 30px 0 0;
       font-size: 25px;
-      /* display: block; */
     }
 
     label {
       font-size: 50px;
       padding-top: 10px;
-    }
+    } */
 
     .main {
       width: 100%;
@@ -376,18 +484,33 @@ p {
     }
 }
 
+/* Desktop Display */
 @media only screen and (min-width: 1000px) {
 
-
   .steven {
-    padding-top: 30px;
+    padding-top: 15px;
   }
 
-  .nav {
+  .hamburger {
+    display: none;
+  }
+
+  .menuLinks {
+    display: inline;
+    float: none;
+  }
+
+  .menuLinks a {
+    display: table;
+    font-size: 20px;
+    float: right;
+    padding: 30px 20px;
+  }
+
+  /* .nav {
     text-align: right;
     float: none;
     width: 100%;
-    /* padding-right: 0; */
     line-height: 30px;
   }
 
@@ -415,8 +538,7 @@ p {
   label {
     display: none;
     margin: 0;
-    /* float: none; */
-  }
+  } */
 
   .main {
     width: auto;
