@@ -18,7 +18,7 @@ function goLI() {
 // }
 
 function hamburgerFunction(x) {
-  x.classList.toggle("change");
+  // x.classList.toggle("change");
   document.getElementById("links").classList.toggle("show");
 }
 
