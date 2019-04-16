@@ -141,7 +141,7 @@ html {
 }
 
 .dropdown {
-  text-align: left;
+  text-align: right;
   overflow: hidden;
 }
 
@@ -467,6 +467,21 @@ p {
 
 /* Desktop Display */
 @media only screen and (min-width: 1000px) {
+
+  .navbar {
+    text-align: right;
+    float: none;
+    line-height: 30px;
+    height: 15%;
+  }
+
+  .navbar a {
+    clear: right;
+  }
+
+  .menuLinks a {
+    clear: none;
+  }
 
   .steven {
     padding-top: 15px;
