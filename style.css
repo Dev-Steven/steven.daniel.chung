@@ -471,20 +471,14 @@ p {
   .navbar {
     text-align: right;
     float: none;
-    line-height: 30px;
+    line-height: 50px;
     height: 15%;
   }
 
-  .navbar a {
-    clear: right;
-  }
-
-  .menuLinks a {
-    clear: none;
-  }
-
   .steven {
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding-left: 30px 20px; */
   }
 
   .hamburger {
@@ -493,48 +487,15 @@ p {
 
   .menuLinks {
     display: inline;
-    float: left;
+    float: none;
+    clear: none;
   }
 
   .menuLinks a {
-    display: block;
-    font-size: 20px;
-    float: right;
+    display: inline-block;
+    font-size: 25px;
     padding: 30px 20px;
   }
-
-  /* .nav {
-    text-align: right;
-    float: none;
-    width: 100%;
-    line-height: 30px;
-  }
-
-
-  .menu {
-    margin: 0;
-    font-size: 25px;
-    padding-top: 10px;
-    padding-right: 0px;
-    font-size: 25px;
-    display: inline;
-    float: none;
-
-  }
-
-  .menu a {
-    clear: none;
-    text-align: right;
-    display: table;
-    line-height: 70px;
-    padding: 10px 30px;
-    float: right;
-  }
-
-  label {
-    display: none;
-    margin: 0;
-  } */
 
   .main {
     width: auto;
@@ -548,6 +509,7 @@ p {
     font-size: 18px;
   }
 }
+
 footer {
   background-color: #FF8C00;
   color: white;
