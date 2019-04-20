@@ -1,5 +1,5 @@
 function goIG() {
-    url = "https://www.instagram.com/steven____daniel/?hl=en";
+    url = "https://www.instagram.com/steven.devs/";
     window.open(url);
 }
 
